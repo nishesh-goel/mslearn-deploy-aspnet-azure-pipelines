@@ -44,7 +44,7 @@ stages:
               inlineScript: >
                 # create a resource group
 
-                az group create -l $LOCATION -n $RESOURCEGROUPNAME
+                # az group create -l $LOCATION -n $RESOURCEGROUPNAME
 
 
                 # create and configure Azure SQL logical server and Azure SQL
