@@ -54,8 +54,8 @@ stages:
           continueOnError: true
           failOnStandardError: false
           inlineScript: |
-            # create a resource group
             az group create -l $LOCATION -n $RESOURCEGROUPNAME
+            
            
         
     
