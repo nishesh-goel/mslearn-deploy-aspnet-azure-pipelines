@@ -51,7 +51,7 @@ stages:
           azureSubscription: 'labAzureSubscription'
           scriptType: 'bash'
           scriptLocation: 'inlineScript'
-          inlineScript: |
+          inlineScript: 
             # create a resource group
             az group create -l $LOCATION -n $RESOURCEGROUPNAME
             
@@ -63,6 +63,4 @@ stages:
             # create and configure an Azure App Service plan and an Azure web app
             az appservice plan create -g $RESOURCEGROUPNAME -n $SVCPLANNAME --sku FREE
             az webapp create -g $RESOURCEGROUPNAME -p $SVCPLANNAME -n $WEBAPPNAME
-        useGlobalConfig: true
-        failOnStandardError: true
-    
+        
