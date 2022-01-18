@@ -66,7 +66,4 @@ stages:
 
                 az appservice plan create -g $RESOURCEGROUPNAME -n $SVCPLANNAME
                 --sku FREE
-
-                az webapp create -g $RESOURCEGROUPNAME -p $SVCPLANNAME -n
-                $WEBAPPNAME
                   
